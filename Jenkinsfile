@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/doddabasappa94/multiple-microservices']]])
+               checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/doddabasappa94/multple-microservices']]])
             }
         }
         stage('Deploy to k8s'){
